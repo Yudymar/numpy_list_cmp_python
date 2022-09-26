@@ -27,10 +27,24 @@ que ya dispongamos de Python. El objetivo es:
         la suma y los números recoletados
     b) Si el número es mayor a 21 se debe informar al usuario que perdio
 '''
+import random
+
+def numeros_aleatorios():
+
+    numeros = [random.randint(1, 10) for x in range(3)]
+    if(sum(numeros) <=21):
+        print('La lista de numeros es:', numeros, 'y la sumatoria total es:', sum(numeros))
+    else:
+        print('Lo siento, has perdido')
+    
 
 if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
 
+    numeros_aleatorios()
+
+
+    
     print("terminamos")
