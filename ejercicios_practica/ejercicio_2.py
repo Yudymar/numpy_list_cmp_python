@@ -19,6 +19,8 @@ if __name__ == '__main__':
     # (len) de un string pasado como parámetro
 
     # len_string = lambda......
+    
+    len_string = lambda x: len(x)
 
     # 2)
     # Lista de string
@@ -35,5 +37,13 @@ if __name__ == '__main__':
     # directamente la lambda.
 
     # palabras_len = list(map....)
+    
+    # Mapear Lambda
+    palabras_len = list(map(str, palabras))
+
+    # Crear nueva lista y declar la lambda dentro
+    nueva_lista = list(map(lambda x: len(x), palabras))
+
+    print(nueva_lista)
 
     print("terminamos")

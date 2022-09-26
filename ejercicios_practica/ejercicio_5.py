@@ -9,6 +9,14 @@
 
 # Ejercicios con comprensión de listas
 
+def personal_1_10():
+    lista = len([x for x in accesos if(x <=10)])
+    print('El total de personas que ingresaron por el molinete es de:', lista)  
+
+def personal_valido():
+    lista = [x for x in accesos if(x in id_validos)]
+    print('Los ID validos que ingresaron por ese molinete son:', lista)  
+
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -30,6 +38,8 @@ if __name__ == '__main__':
 
     # personal_1_10 = [.....]
 
+    personal_1_10()
+
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
     # cuyo ID de personal esté dentro de los ID válidos para ingresar
@@ -41,5 +51,7 @@ if __name__ == '__main__':
     # dentro de "id_validos"
 
     # personal_valido = [.....]
+
+    personal_valido()
 
     print("terminamos")
