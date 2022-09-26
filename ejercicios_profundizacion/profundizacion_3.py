@@ -62,10 +62,7 @@ if __name__ == '__main__':
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
 
-    # lista_compra_productos = [producto.get(lista_compra_id[x],"NaN") for x in range(len((lista_compra_id)))]
-
-
-    lista_compra_productos = [producto.get(k) if k in producto.keys() else 'NaN' for k in lista_compra_id]
+    lista_compra_productos = [producto.get(x) if x in producto.keys() else 'NaN' for x in lista_compra_id]
     print(lista_compra_productos)
 
     print("terminamos")
